@@ -26,6 +26,7 @@ import com.kt.gigagenie.pci.data.StbData;
 import com.kt.gigagenie.pci.data.PciSrv_VoiceChkInData;
 import com.kt.gigagenie.pci.data.pci_db.ErrorInfo;
 import com.kt.gigagenie.pci.data.stb_db.EventPidData;
+import com.kt.gigagenie.pci.data.stb_db.StbDb_Common;
 import com.kt.gigagenie.pci.net.json.JsonArray;
 import com.kt.gigagenie.pci.net.json.JsonException;
 import com.kt.gigagenie.pci.net.json.JsonObject;
@@ -674,12 +675,19 @@ public class PciBroadcastReceiver extends BroadcastReceiver implements Broadcast
      */
     public void recvAdidResp(Intent intent){
         if(Global.getInstance().getPciService() == null || !PciManager.isInitialized() && Pci_Service.pciReady){
-            GLog.printWtf(this, "pciManager is not initialized. return recvPciListReq");
+            GLog.printWtf(this, "pciManager is not initialized. return recvAdidResp");
             return;
         }
 
-        final String reqPkgName = intent.getStringExtra("packageName");
-        PciManager.getInstance().getNetManager().apiPci6008_reqCheckInList(true, reqPkgName, null);
+        try {
+            String adid = intent.getStringExtra("adid");
+            StbDb_Common stbDb_common = new StbDb_Common(adid);
+
+            //PciManager.getInstance().getNetManager().apiPci6008_reqCheckInList(true, reqPkgName, null);
+        }catch (Exception e){
+
+        }
+
     }
 
 
