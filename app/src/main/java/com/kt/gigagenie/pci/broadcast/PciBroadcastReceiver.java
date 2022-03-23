@@ -78,7 +78,7 @@ public class PciBroadcastReceiver extends BroadcastReceiver implements Broadcast
 
         intentFilter_Recv.addAction(RECV_ACTION_POWER_STANDBY);
         intentFilter_Recv.addAction(RECV_ACTION_POWER_NORMAL);
-        intentFilter_Recv.addAction(RECV_ACTION_TVADID_RESP);  // PCI AD by dalkommjk - v16.00.01 | 2022-03-23
+        intentFilter_Recv.addAction(RECV_ACTION_TVADID_RESP);  //PCI AD by dalkommjk - v16.00.01 | 2022-03-23
 
     }
 
