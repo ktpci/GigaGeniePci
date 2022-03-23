@@ -1,0 +1,3 @@
+include ':ktbeacon'
+include ':app',':kt_pns_lib_R13.03.02'
+

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+    ================================================================================================
+                                  Application Environment Setting
+    ================================================================================================
+    -->
+
+    <!-- Version Format (*=numeric) :  *.*.*|******.**** -->
+    <string name="app_local_version">16.00.0101|220222.1035</string>
+
+
+
+
+    <!-- application environment(Select Server) : none, dev, bmt, live -->
+    <string name="app_env">live</string>
+
+    <!-- application Running Platform : emul, stb -->
+    <string name="app_platform">stb</string>
+
+    <!-- Log Level : 0(test(verbose)), 1(debug), 2(message), 3(warning), 4(error), 5(exception), 6(none) // (default : 6) -->
+    <integer name="app_loglevel">0</integer>
+
+
+
+    <!-- Split download Random time range(Second) (default = true, 5, 30)  -->
+    <bool name="pci_splitdownload_use">true</bool>
+    <integer name="pci_splitdownload_rndrange_min">5</integer>
+    <integer name="pci_splitdownload_rndrange_max">30</integer>
+
+
+
+
+    <!-- ============================ 모니터링 루프 & 업데이트 설정 ============================ -->
+    <!-- STB Info update setup -->
+    <!-- 모니터링와 업데이트 루프 사용여부(true = 1일 1회 Stb정보전송, 에러정보 전송과 최한시간 업데이트 사용여부 / false = 미사용) (default = true) -->
+    <bool name="pci_updateloop_use">true</bool>
+    <!-- 셋탑정보 서버 전송 시간(**시) (default = 4) -->
+    <!-- 셋탑정보 서버 전송 시간(**시) (default = 6)으로 수정 by dalkommjk } 2021-01-27 -->
+    <integer name="pci_updatetime">6</integer>
+    <!-- 셋탑정보 전송 시간 for Test. 0 이하의 값 입력 시 pci_updatetime값 사용. 정책 받아온 뒤 Monitoring Loop 시작 후 time초 이후로 설정 됨 (default : -1) -->
+    <integer name="pci_update_stbinfo">-1</integer>
+
+    <!-- 분산 업데이트 사용여부 (default = true) -->
+    <bool name="pci_updateinfo_split_use">true</bool>
+    <!-- 분산 업데이트 범위(초 단위) (default = 5~1800 : 5초~30분) -->
+    <!-- 분산 업데이트 범위(초 단위) (default = 5~3600 : 5초~60분 으로 수정)  by dalkommJK | 2021-01-27 -->
+    <integer name="pci_updateinfo_split_rndrange_min">5</integer>
+    <integer name="pci_updateinfo_split_rndrange_max">3600</integer>
+
+    <!-- 서버에 에러로그 전송 설정. true = save errorLog on PciDB(1일 1회 서버전송), false = not use pciDB //  (default : true) -->
+    <bool name="app_debug_usePciDb">true</bool>
+
+
+
+
+
+    <!-- ============================ 체크인&아웃 이벤트 ============================ -->
+    <!-- 체크아웃 루프 사용여부 (default = true) -->
+    <bool name="pci_checkoutloop_use">true</bool>
+
+    <!-- Wifi CheckOut 시간 (매일 정각 **시) (default = 2)-->
+    <integer name="pci_checkin_list_wifi_out_hour">2</integer>
+    <!-- Wifi CheckOut 시간 for Test. 0 이하의 값 입력 시 pci_checkin_list_wifi_out_hour 사용. 체크아웃 스레드 시작 후 time초 이후 시간을 체크아웃 시간으로 설정 (default : -1) -->
+    <integer name="pci_checkin_list_wifi_out_time">-1</integer>
+    <!-- 보이스 CheckOut 시간 for Test. 0 이하의 값 입력 시 정책값 사용. 체크아웃 스레드 시작 후 time초 이후 시간을 체크아웃 시간으로 설정 (default : -1) -->
+    <integer name="pci_checkin_list_voice_out_time">-1</integer>
+
+
+
+
+
+
+    <!-- ============================ 정책 ============================ -->
+    <!-- Policy Update setup & nonAudiblePlayerFile Test -->
+    <!-- 0(Use Policy Data), 1(Ignore Policy For Download Test), 2(Ignore Policy For Non-Download State) // (default : 0)  -->
+    <integer name="pci_sndfile_ignorePolicy">0</integer>
+    <!-- True(Use Audible Sound) or False (default : false) -->
+    <bool name="pci_sndfile_useAudibleTest">false</bool>
+    <!-- split update Policy(sec) (default = 5~30) -->
+    <integer name="pci_updatepolicy_split_rndrange_min">5</integer>
+    <integer name="pci_updatepolicy_split_rndrange_max">30</integer>
+
+    <!-- 정책값 임의 테스트 -->
+    <!-- 업데이트 관련 시간 for Test. 0 이하의 값 입력 시 정책값 사용. 정책 받아온 뒤 property time초 이후로 각각 설정 됨 (default : -1, -1) -->
+    <integer name="pci_update_time_idle">-1</integer>
+    <integer name="pci_update_time_expired">-1</integer>
+    <!-- waitTime for Test. 0 이하의 값 입력 시 정책값 사용 / 단위 : 초 (default : -1) -->
+    <integer name="pci_update_wait_time">-1</integer>
+
+
+
+
+
+    <!-- ============================ 기타 프로그램 설정 ============================ -->
+    <bool name="use_boot_complete">true</bool>
+    <!-- Use Keep-Alive Service(Resist Alarm For Revive Service) (default : true) -->
+    <bool name="pci_service_keep_alive">true</bool>
+    <!-- App 시작 후 30초 경과 후 App 강제 종료 및 재시작(Unhandled Exception 강제 발생) (default : false) -->
+    <bool name="pci_service_restart_test">false</bool>
+
+    <!-- Date Format(Pci-Server, MC) -->
+    <string name="date_format_pcisrv">yyyyMMddHHmmss</string>
+    <string name="date_format_pcisrv_checkin_list">yyyyMMddHHmmss</string>
+    <string name="date_format_mc">yyyyMMddHHmmss</string>
+
+    <!-- AES 암호화 키 (default : true, 12345678901234567890123456789012) -->
+    <bool name="aes_encrypt_use">true</bool>
+    <string name="aes_key">12345678901234567890123456789012</string>
+
+
+
+
+
+
+    <!-- ============================ PCI Platform & 비가청 서버 관련 설정 ============================ -->
+    <!-- PCI API Url For Test By 1000~ -->
+    <!--
+    <string name="api_pci_url_dev">https://pcibmt.paran.com:8000/</string>
+    <string name="api_pci_url_bmt">https://pcibmt.ktipmedia.co.kr:8000/</string>
+    <string name="api_pci_url_live">https://pcitv.ktipmedia.co.kr/</string>
+    <string name="api_pci_uri_001">V100/PCI_1001/get_pci_key</string>
+    <string name="api_pci_uri_002">V100/PCI_1002/power_on_stb</string>
+    <string name="api_pci_uri_003">V100/PCI_1003/get_policy</string>
+    <string name="api_pci_uri_004">V100/PCI_1004/send_non_sound</string>
+    <string name="api_pci_uri_005">V100/PCI_1005/report_channel</string>
+    <string name="api_pci_uri_006">V100/PCI_1006/send_entry_information</string>
+    <string name="api_pci_uri_007">V100/PCI_1007/cant_play_sound</string>
+    <string name="api_pci_uri_008">V100/PCI_1008/send_smart_push</string>
+    <string name="api_pci_uri_009">V100/PCI_1009/</string>
+    -->
+
+    <!-- PCI API Url For GigaGenie -->
+    <string name="api_pci_url_dev">http://125.147.35.50:8000/</string>
+    <string name="api_pci_url_bmt">https://pcibmt.ktipmedia.co.kr:8000/</string>
+    <string name="api_pci_url_live">https://pcitv.ktipmedia.co.kr/</string>
+    <string name="api_pci_uri_001">V100/PCI_6001/get_pci_key</string>
+    <string name="api_pci_uri_002">V100/PCI_6002/stb_info</string>
+    <string name="api_pci_uri_003">V100/PCI_6003/get_policy</string>
+    <string name="api_pci_uri_004">V100/PCI_6004/send_non_sound</string>
+    <string name="api_pci_uri_005">V100/PCI_6005/voice_info</string>
+    <string name="api_pci_uri_006">V100/PCI_6006/activation_userkey</string>
+    <string name="api_pci_uri_007">V100/PCI_6007/stb_fail_info</string>
+    <string name="api_pci_uri_008">V100/PCI_6008/checkin_list</string>
+    <string name="api_pci_uri_009">V100/PCI_6009/stop_sound_play</string>
+    <string name="api_pci_uri_6010">V100/PCI_6010/activation_token</string>  <!-- KPNS 추가 - by dalkommJK | 2019.09.30 -->
+
+
+    <!-- PCIAD API Url For GigaGenie - by dalkommjk | 2022.02.22 -->
+    <string name="api_pciad_url_dev">http://125.147.35.50:8000/</string>
+    <string name="api_pciad_url_bmt">https://pcibmt.ktipmedia.co.kr:8000/</string>
+    <string name="api_pciad_url_live">https://pcitv.ktipmedia.co.kr/</string>
+    <string name="api_pciad_uri_1001">V100/PCIAD_1001/get_policy</string>
+    <string name="api_pciad_uri_1002">V100/PCIAD_1002/check_in</string>
+    <string name="api_pciad_uri_1003">V100/PCIAD_1003/check_out</string>
+    <string name="api_pciad_uri_1004">V100/PCIAD_1004/check_in_list</string>
+    <string name="api_pciad_uri_1005">V100/PCIAD_1005/regist_push_token</string>
+    <string name="api_pciad_uri_1006">V100/PCIAD_1006/stb_fail_info</string>
+
+
+    <!-- PCI Sound API environment -->
+
+    <string name="api_beacon_url_dev">https://dev-pci.soundl.ly/</string>
+    <string name="api_beacon_url_bmt">https://pcisound.ktipmedia.co.kr/</string>
+    <string name="api_beacon_url_live">https://pcisound.ktipmedia.co.kr/</string>
+    <string name="api_beacon_uri_0001">v1/beacon/highfreq/regist</string>
+    <string name="sound_pw">1da7bffb-988e-4662-84d3-ada7a69b1857</string>
+
+
+
+
+    <!-- ============================ 디버그 화면 관련 설정 ============================ -->
+    <!-- Debug Screen Config (default : false, 6, 0) / Debug모드 사용시 true, 0, 1000-->
+    <bool name="app_debugmode_use">false</bool>
+    <integer name="app_debugmode_loglevel">6</integer>
+    <integer name="app_debugmode_logBufferLines">0</integer>
+
+    <!-- 디버그 모드에서 Activity실행 시 Service 자동으로 시작할 지 여부 -->
+    <bool name="app_debugmode_autostart_service">false</bool>
+
+    <string-array name="debug_api_list">
+        <item>api_pci_001</item>
+        <item>api_pci_002_USER1</item>
+        <item>api_pci_002_USER2</item>
+        <item>api_pci_002_NONE</item>
+        <item>api_pci_003</item>
+        <item>api_pci_004</item>
+        <item>api_pci_005_CheckIn</item>
+        <item>api_pci_005_CheckOut</item>
+        <item>api_pci_005_Update</item>
+        <item>api_pci_006</item>
+        <item>api_pci_007</item>
+        <item>api_pci_008</item>
+        <item>api_pci_008_RETRY</item>
+        <item>api_pci_009_Play</item>
+        <item>api_pci_009_Stop</item>
+        <item>api_pci_0er</item>
+    </string-array>
+
+    <string-array name="debug_broadcast_list">
+        <!--
+        <item>SEND_KEEPALIVE_RESP/kt.action.service.resp</item>
+        <item>SEND_PCILIST_RESP/kt.action.pci.resp</item>
+        <item>SEND_MCSTATE_CHECK/kt.action.state.req</item>
+        <item>SEND_PCI_SETTING_RESP/kt.action.launcher.pci.status.rep</item>
+        <item>SEND_POLICY_RESP/kt.action.launcher.pci.service.rep</item>
+        <item>RECV_MCSTATE_RESP/kt.action.state.resp</item>
+        <item>RECV_PCI_SETTING_REQ/kt.action.pci.setting</item>
+        -->
+        <item>RECV_KEEPALIVE_CHECK/kt.action.service.check</item>
+        <item>RECV_VOICE_ALARM/kt.action.voice.alarm/I</item>
+        <item>RECV_VOICE_ALARM/kt.action.voice.alarm/U</item>
+        <item>RECV_PCILIST_REQ/kt.action.pci.req</item>
+        <item>RECV_PCI_POLICY_REQ/kt.action.pci.service</item>
+        <item>RECV_USER_CHANGE/kt.action.launcher.mode.change</item>
+        <item>RECV_USER_DISCONNECT/kt.action.launcher.auth.init</item>
+        <item>RECV_PUSH_CHECKIN_LIST/kt.action.push.checkinlist</item>
+        <item>RECV_ACTION_POWER_STANDBY/kt.action.power.standby</item>
+        <item>RECV_ACTION_POWER_NORMAL/kt.action.power.normal</item>
+        <item>RECV_ACTION_PUSH_ALARM/kt.action.push.alarm/NO_BTN</item>
+        <item>RECV_ACTION_PUSH_ALARM/kt.action.push.alarm/BTN</item>
+        <item>RECV_ACTION_PUSH_SETTING/kt.action.push.setting/APP_REBOOT</item>
+        <item>RECV_ACTION_PUSH_SETTING/kt.action.push.setting/API_6002</item>
+        <item>RECV_ACTION_PUSH_SETTING/kt.action.push.setting/API_6003</item>
+        <item>RECV_ACTION_PUSH_SETTING/kt.action.push.setting/SOUND_SET_Y</item>
+        <item>RECV_ACTION_PUSH_SETTING/kt.action.push.setting/SOUND_SET_N</item>
+
+        <!--
+        <item>RECV_PUSH_ALARM/kt.action.push.alarm</item>
+        <item>RECV_PUSH_SETTING/kt.action.push.setting</item>
+        -->
+    </string-array>
+
+    <string-array name="debug_appEnv_list">
+        <item>none</item>
+        <item>dev</item>
+        <item>bmt</item>
+        <item>live</item>
+    </string-array>
+
+
+
+</resources>

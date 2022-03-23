@@ -1,0 +1,34 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\02_workspace\\emarttest\\ktbeacon\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-en-rGB\\values-en-rGB.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\dalkommjk\\.gradle\\caches\\transforms-2\\files-2.1\\dce699533c4fcdc660e71564e844b3fd\\core-1.3.0-alpha02\\res\\values-en-rGB\\values-en-rGB.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "D:\\02_workspace\\emarttest\\ktbeacon\\build\\intermediates\\res\\merged\\release\\values-en-rGB\\values-en-rGB.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\dalkommjk\\.gradle\\caches\\transforms-2\\files-2.1\\dce699533c4fcdc660e71564e844b3fd\\core-1.3.0-alpha02\\res\\values-en-rGB\\values-en-rGB.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        }
+    ]
+}

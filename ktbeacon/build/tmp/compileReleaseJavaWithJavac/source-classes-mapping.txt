@@ -1,0 +1,337 @@
+com/ktpci/beacon/BeaconLocalBroadcastProcessor.java
+ com.ktpci.beacon.BeaconLocalBroadcastProcessor
+ com.ktpci.beacon.BeaconLocalBroadcastProcessor$1
+com/ktpci/beacon/service/RssiFilter.java
+ com.ktpci.beacon.service.RssiFilter
+com/ktpci/bluetooth/BluetoothMedic.java
+ com.ktpci.bluetooth.BluetoothMedic
+ com.ktpci.bluetooth.BluetoothMedic$1
+ com.ktpci.bluetooth.BluetoothMedic$2
+ com.ktpci.bluetooth.BluetoothMedic$3
+ com.ktpci.bluetooth.BluetoothMedic$4
+com/ktpci/beacon/pcireceiver/RunningReceiver.java
+ com.ktpci.beacon.pcireceiver.RunningReceiver
+ com.ktpci.beacon.pcireceiver.RunningReceiver$1
+com/ktpci/beacon/IntentHandler.java
+ com.ktpci.beacon.IntentHandler
+com/ktpci/beacon/BeaconParser.java
+ com.ktpci.beacon.BeaconParser
+ com.ktpci.beacon.BeaconParser$BeaconLayoutException
+com/ktpci/beacon/utils/EddystoneTelemetryAccessor.java
+ com.ktpci.beacon.utils.EddystoneTelemetryAccessor
+com/ktpci/beacon/distance/CurveFittedDistanceCalculator.java
+ com.ktpci.beacon.distance.CurveFittedDistanceCalculator
+com/ktpci/beacon/service/scanner/CycledLeScanCallback.java
+ com.ktpci.beacon.service.scanner.CycledLeScanCallback
+com/ktpci/beacon/pciredux/reducer/ReducerDowngradeState.java
+ com.ktpci.beacon.pciredux.reducer.ReducerDowngradeState
+ com.ktpci.beacon.pciredux.reducer.ReducerDowngradeState$1
+com/ktpci/beacon/service/SettingsData.java
+ com.ktpci.beacon.service.SettingsData
+com/ktpci/beacon/service/ScanJobScheduler.java
+ com.ktpci.beacon.service.ScanJobScheduler
+com/ktpci/beacon/pciredux/state/PCIState.java
+ com.ktpci.beacon.pciredux.state.PCIState
+ com.ktpci.beacon.pciredux.state.PCIState$1
+ com.ktpci.beacon.pciredux.state.PCIState$Type
+com/ktpci/beacon/BuildConfig.java
+ com.ktpci.beacon.BuildConfig
+com/ktpci/beacon/pciutil/PCILog.java
+ com.ktpci.beacon.pciutil.PCILog
+com/ktpci/beacon/C.java
+ com.ktpci.beacon.C
+ com.ktpci.beacon.C$BooleanSerializer
+ com.ktpci.beacon.C$CheckoutType
+ com.ktpci.beacon.C$Gender
+com/ktpci/beacon/pciredux/core/PCIReducer.java
+ com.ktpci.beacon.pciredux.core.PCIReducer
+com/ktpci/beacon/pciredux/core/State.java
+ com.ktpci.beacon.pciredux.core.State
+com/ktpci/beacon/client/NullBeaconDataFactory.java
+ com.ktpci.beacon.client.NullBeaconDataFactory
+ com.ktpci.beacon.client.NullBeaconDataFactory$1
+com/ktpci/beacon/service/MonitoringStatus.java
+ com.ktpci.beacon.service.MonitoringStatus
+com/ktpci/beacon/utils/ProcessUtils.java
+ com.ktpci.beacon.utils.ProcessUtils
+com/ktpci/beacon/distance/DistanceCalculator.java
+ com.ktpci.beacon.distance.DistanceCalculator
+com/ktpci/beacon/BeaconConsumer.java
+ com.ktpci.beacon.BeaconConsumer
+com/ktpci/beacon/simulator/BeaconSimulator.java
+ com.ktpci.beacon.simulator.BeaconSimulator
+com/ktpci/beacon/distance/ModelSpecificDistanceCalculator.java
+ com.ktpci.beacon.distance.ModelSpecificDistanceCalculator
+ com.ktpci.beacon.distance.ModelSpecificDistanceCalculator$1
+com/ktpci/beacon/service/RangeState.java
+ com.ktpci.beacon.service.RangeState
+com/ktpci/beacon/service/RegionMonitoringState.java
+ com.ktpci.beacon.service.RegionMonitoringState
+com/ktpci/beacon/RangeNotifier.java
+ com.ktpci.beacon.RangeNotifier
+com/ktpci/beacon/pciredux/reducer/ReducerOptIn.java
+ com.ktpci.beacon.pciredux.reducer.ReducerOptIn
+ com.ktpci.beacon.pciredux.reducer.ReducerOptIn$1
+com/ktpci/beacon/service/scanner/CycledLeScannerForAndroidO.java
+ com.ktpci.beacon.service.scanner.CycledLeScannerForAndroidO
+com/ktpci/beacon/pciredux/core/Action.java
+ com.ktpci.beacon.pciredux.core.Action
+com/ktpci/beacon/client/BeaconDataFactory.java
+ com.ktpci.beacon.client.BeaconDataFactory
+com/ktpci/beacon/logging/InfoAndroidLogger.java
+ com.ktpci.beacon.logging.InfoAndroidLogger
+com/ktpci/beacon/logging/VerboseAndroidLogger.java
+ com.ktpci.beacon.logging.VerboseAndroidLogger
+com/ktpci/beacon/pciredux/reducer/ReducerDisagreeTerms.java
+ com.ktpci.beacon.pciredux.reducer.ReducerDisagreeTerms
+com/ktpci/beacon/service/scanner/CycledLeScannerForLollipop.java
+ com.ktpci.beacon.service.scanner.CycledLeScannerForLollipop
+ com.ktpci.beacon.service.scanner.CycledLeScannerForLollipop$1
+ com.ktpci.beacon.service.scanner.CycledLeScannerForLollipop$2
+ com.ktpci.beacon.service.scanner.CycledLeScannerForLollipop$3
+ com.ktpci.beacon.service.scanner.CycledLeScannerForLollipop$4
+ com.ktpci.beacon.service.scanner.CycledLeScannerForLollipop$5
+com/ktpci/beacon/KtBeaconWM2.java
+ com.ktpci.beacon.KtBeaconWM2
+ com.ktpci.beacon.KtBeaconWM2$1
+com/ktpci/beacon/BeaconData.java
+ com.ktpci.beacon.BeaconData
+com/ktpci/beacon/pciredux/action/ActionFetchPolicy.java
+ com.ktpci.beacon.pciredux.action.ActionFetchPolicy
+ com.ktpci.beacon.pciredux.action.ActionFetchPolicy$1
+com/ktpci/beacon/pciredux/action/ActionOptIn.java
+ com.ktpci.beacon.pciredux.action.ActionOptIn
+ com.ktpci.beacon.pciredux.action.ActionOptIn$1
+com/ktpci/bluetooth/Pdu.java
+ com.ktpci.bluetooth.Pdu
+com/ktpci/beacon/BeaconTransmitter.java
+ com.ktpci.beacon.BeaconTransmitter
+ com.ktpci.beacon.BeaconTransmitter$1
+com/ktpci/beacon/service/ScanState.java
+ com.ktpci.beacon.service.ScanState
+com/ktpci/beacon/logging/AbstractAndroidLogger.java
+ com.ktpci.beacon.logging.AbstractAndroidLogger
+com/ktpci/beacon/pcireceiver/UpdateReceiver.java
+ com.ktpci.beacon.pcireceiver.UpdateReceiver
+com/ktpci/beacon/pciredux/state/PCIState3Active.java
+ com.ktpci.beacon.pciredux.state.PCIState3Active
+ com.ktpci.beacon.pciredux.state.PCIState3Active$1
+com/ktpci/beacon/pciredux/action/ActionAgreeTerms.java
+ com.ktpci.beacon.pciredux.action.ActionAgreeTerms
+ com.ktpci.beacon.pciredux.action.ActionAgreeTerms$1
+com/ktpci/beacon/service/StartRMData.java
+ com.ktpci.beacon.service.StartRMData
+ com.ktpci.beacon.service.StartRMData$1
+com/ktpci/beacon/pciutil/PCIAlarm.java
+ com.ktpci.beacon.pciutil.PCIAlarm
+com/ktpci/beacon/pciutil/PCIChiper.java
+ com.ktpci.beacon.pciutil.PCIChiper
+com/ktpci/beacon/BleNotAvailableException.java
+ com.ktpci.beacon.BleNotAvailableException
+com/ktpci/beacon/startup/RegionBootstrap.java
+ com.ktpci.beacon.startup.RegionBootstrap
+ com.ktpci.beacon.startup.RegionBootstrap$1
+ com.ktpci.beacon.startup.RegionBootstrap$InternalBeaconConsumer
+com/ktpci/beacon/pciredux/action/ActionDowngradeState.java
+ com.ktpci.beacon.pciredux.action.ActionDowngradeState
+ com.ktpci.beacon.pciredux.action.ActionDowngradeState$1
+com/ktpci/beacon/service/BeaconService.java
+ com.ktpci.beacon.service.BeaconService
+ com.ktpci.beacon.service.BeaconService$BeaconBinder
+ com.ktpci.beacon.service.BeaconService$IncomingHandler
+com/ktpci/beacon/KtBeaconWM.java
+ com.ktpci.beacon.KtBeaconWM
+ com.ktpci.beacon.KtBeaconWM$1
+com/ktpci/beacon/utils/UrlBeaconUrlCompressor.java
+ com.ktpci.beacon.utils.UrlBeaconUrlCompressor
+ com.ktpci.beacon.utils.UrlBeaconUrlCompressor$TLDMapEntry
+com/ktpci/beacon/pcireceiver/WakeReceiver.java
+ com.ktpci.beacon.pcireceiver.WakeReceiver
+com/ktpci/beacon/service/scanner/ScanFilterUtils.java
+ com.ktpci.beacon.service.scanner.ScanFilterUtils
+ com.ktpci.beacon.service.scanner.ScanFilterUtils$ScanFilterData
+com/ktpci/beacon/service/scanner/NonBeaconLeScanCallback.java
+ com.ktpci.beacon.service.scanner.NonBeaconLeScanCallback
+com/ktpci/beacon/logging/Loggers.java
+ com.ktpci.beacon.logging.Loggers
+com/ktpci/beacon/logging/WarningAndroidLogger.java
+ com.ktpci.beacon.logging.WarningAndroidLogger
+com/ktpci/beacon/Beacon.java
+ com.ktpci.beacon.Beacon
+ com.ktpci.beacon.Beacon$1
+ com.ktpci.beacon.Beacon$Builder
+com/ktpci/beacon/pciutil/PCIPackageUtil.java
+ com.ktpci.beacon.pciutil.PCIPackageUtil
+com/ktpci/beacon/service/Callback.java
+ com.ktpci.beacon.service.Callback
+com/ktpci/beacon/pciredux/notifier/NotifierRoot.java
+ com.ktpci.beacon.pciredux.notifier.NotifierRoot
+ com.ktpci.beacon.pciredux.notifier.NotifierRoot$1
+ com.ktpci.beacon.pciredux.notifier.NotifierRoot$2
+ com.ktpci.beacon.pciredux.notifier.NotifierRoot$3
+com/ktpci/beacon/service/ExtraDataBeaconTracker.java
+ com.ktpci.beacon.service.ExtraDataBeaconTracker
+com/ktpci/beacon/pciredux/core/Notifier.java
+ com.ktpci.beacon.pciredux.core.Notifier
+com/ktpci/beacon/pciredux/reducer/ReducerOptOut.java
+ com.ktpci.beacon.pciredux.reducer.ReducerOptOut
+ com.ktpci.beacon.pciredux.reducer.ReducerOptOut$1
+com/ktpci/beacon/pciutil/Null.java
+ com.ktpci.beacon.pciutil.Null
+com/ktpci/beacon/service/Stats.java
+ com.ktpci.beacon.service.Stats
+ com.ktpci.beacon.service.Stats$Sample
+com/ktpci/beacon/Identifier.java
+ com.ktpci.beacon.Identifier
+com/ktpci/beacon/distance/DistanceConfigFetcher.java
+ com.ktpci.beacon.distance.DistanceConfigFetcher
+com/ktpci/beacon/startup/StartupBroadcastReceiver.java
+ com.ktpci.beacon.startup.StartupBroadcastReceiver
+com/ktpci/beacon/pciredux/action/ActionDisagreeTerms.java
+ com.ktpci.beacon.pciredux.action.ActionDisagreeTerms
+ com.ktpci.beacon.pciredux.action.ActionDisagreeTerms$1
+com/ktpci/beacon/service/scanner/CycledLeScannerForJellyBeanMr2.java
+ com.ktpci.beacon.service.scanner.CycledLeScannerForJellyBeanMr2
+ com.ktpci.beacon.service.scanner.CycledLeScannerForJellyBeanMr2$1
+ com.ktpci.beacon.service.scanner.CycledLeScannerForJellyBeanMr2$2
+ com.ktpci.beacon.service.scanner.CycledLeScannerForJellyBeanMr2$3
+ com.ktpci.beacon.service.scanner.CycledLeScannerForJellyBeanMr2$4
+com/ktpci/bluetooth/BleAdvertisement.java
+ com.ktpci.bluetooth.BleAdvertisement
+com/ktpci/beacon/distance/ModelSpecificDistanceUpdater.java
+ com.ktpci.beacon.distance.ModelSpecificDistanceUpdater
+ com.ktpci.beacon.distance.ModelSpecificDistanceUpdater$CompletionHandler
+com/ktpci/beacon/client/DataProviderException.java
+ com.ktpci.beacon.client.DataProviderException
+com/ktpci/beacon/service/ArmaRssiFilter.java
+ com.ktpci.beacon.service.ArmaRssiFilter
+com/ktpci/beacon/logging/Logger.java
+ com.ktpci.beacon.logging.Logger
+com/ktpci/beacon/Region.java
+ com.ktpci.beacon.Region
+ com.ktpci.beacon.Region$1
+com/ktpci/beacon/service/scanner/DistinctPacketDetector.java
+ com.ktpci.beacon.service.scanner.DistinctPacketDetector
+com/ktpci/beacon/pciredux/reducer/ReducerRoot.java
+ com.ktpci.beacon.pciredux.reducer.ReducerRoot
+ com.ktpci.beacon.pciredux.reducer.ReducerRoot$1
+ com.ktpci.beacon.pciredux.reducer.ReducerRoot$1$1
+ com.ktpci.beacon.pciredux.reducer.ReducerRoot$1$2
+ com.ktpci.beacon.pciredux.reducer.ReducerRoot$1$3
+com/ktpci/beacon/AltBeacon.java
+ com.ktpci.beacon.AltBeacon
+ com.ktpci.beacon.AltBeacon$1
+ com.ktpci.beacon.AltBeacon$Builder
+com/ktpci/beacon/pciutil/PCIFormatter.java
+ com.ktpci.beacon.pciutil.PCIFormatter
+com/ktpci/beacon/logging/EmptyLogger.java
+ com.ktpci.beacon.logging.EmptyLogger
+com/ktpci/beacon/pciutil/PCISave.java
+ com.ktpci.beacon.pciutil.PCISave
+com/ktpci/beacon/powersave/BackgroundPowerSaver.java
+ com.ktpci.beacon.powersave.BackgroundPowerSaver
+com/ktpci/beacon/service/RangedBeacon.java
+ com.ktpci.beacon.service.RangedBeacon
+com/ktpci/beacon/service/ScanJob.java
+ com.ktpci.beacon.service.ScanJob
+ com.ktpci.beacon.service.ScanJob$1
+ com.ktpci.beacon.service.ScanJob$1$1
+ com.ktpci.beacon.service.ScanJob$1$1$1
+com/ktpci/beacon/pciredux/state/PCIState2Inactive.java
+ com.ktpci.beacon.pciredux.state.PCIState2Inactive
+ com.ktpci.beacon.pciredux.state.PCIState2Inactive$1
+com/ktpci/beacon/service/MonitoringData.java
+ com.ktpci.beacon.service.MonitoringData
+com/ktpci/beacon/BeaconManager.java
+ com.ktpci.beacon.BeaconManager
+ com.ktpci.beacon.BeaconManager$1
+ com.ktpci.beacon.BeaconManager$BeaconServiceConnection
+ com.ktpci.beacon.BeaconManager$ConsumerInfo
+ com.ktpci.beacon.BeaconManager$ServiceNotDeclaredException
+com/ktpci/beacon/pciredux/core/Reducer.java
+ com.ktpci.beacon.pciredux.core.Reducer
+com/ktpci/beacon/logging/LogManager.java
+ com.ktpci.beacon.logging.LogManager
+com/ktpci/beacon/MonitorNotifier.java
+ com.ktpci.beacon.MonitorNotifier
+com/ktpci/beacon/pciredux/action/ActionOptOut.java
+ com.ktpci.beacon.pciredux.action.ActionOptOut
+ com.ktpci.beacon.pciredux.action.ActionOptOut$1
+com/ktpci/beacon/simulator/StaticBeaconSimulator.java
+ com.ktpci.beacon.simulator.StaticBeaconSimulator
+com/ktpci/beacon/BeaconDataNotifier.java
+ com.ktpci.beacon.BeaconDataNotifier
+com/ktpci/beacon/pcireceiver/BootReceiver.java
+ com.ktpci.beacon.pcireceiver.BootReceiver
+ com.ktpci.beacon.pcireceiver.BootReceiver$1
+com/ktpci/bluetooth/BluetoothTestJob.java
+ com.ktpci.bluetooth.BluetoothTestJob
+ com.ktpci.bluetooth.BluetoothTestJob$1
+com/ktpci/beacon/service/RunningAverageRssiFilter.java
+ com.ktpci.beacon.service.RunningAverageRssiFilter
+ com.ktpci.beacon.service.RunningAverageRssiFilter$1
+ com.ktpci.beacon.service.RunningAverageRssiFilter$Measurement
+com/ktpci/beacon/pciredux/core/PCIStore.java
+ com.ktpci.beacon.pciredux.core.PCIStore
+com/ktpci/beacon/pciredux/core/AsyncStore.java
+ com.ktpci.beacon.pciredux.core.AsyncStore
+ com.ktpci.beacon.pciredux.core.AsyncStore$1
+ com.ktpci.beacon.pciredux.core.AsyncStore$2
+com/ktpci/beacon/distance/AndroidModel.java
+ com.ktpci.beacon.distance.AndroidModel
+com/ktpci/beacon/pciutil/PCIStorage.java
+ com.ktpci.beacon.pciutil.PCIStorage
+ com.ktpci.beacon.pciutil.PCIStorage$1
+ com.ktpci.beacon.pciutil.PCIStorage$PCIGsonConverter
+com/ktpci/beacon/PCI.java
+ com.ktpci.beacon.PCI
+ com.ktpci.beacon.PCI$1
+ com.ktpci.beacon.PCI$PCICode
+com/ktpci/beacon/service/scanner/CycledLeScanner.java
+ com.ktpci.beacon.service.scanner.CycledLeScanner
+ com.ktpci.beacon.service.scanner.CycledLeScanner$1
+ com.ktpci.beacon.service.scanner.CycledLeScanner$2
+ com.ktpci.beacon.service.scanner.CycledLeScanner$3
+com/ktpci/beacon/service/DetectionTracker.java
+ com.ktpci.beacon.service.DetectionTracker
+com/ktpci/beacon/KtAdvertise.java
+ com.ktpci.beacon.KtAdvertise
+com/ktpci/beacon/AltBeaconParser.java
+ com.ktpci.beacon.AltBeaconParser
+com/ktpci/beacon/service/RangingData.java
+ com.ktpci.beacon.service.RangingData
+com/ktpci/beacon/pciredux/core/PCINotifier.java
+ com.ktpci.beacon.pciredux.core.PCINotifier
+com/ktpci/beacon/pciutil/PCIPermissionUtil.java
+ com.ktpci.beacon.pciutil.PCIPermissionUtil
+com/ktpci/beacon/service/ScanHelper.java
+ com.ktpci.beacon.service.ScanHelper
+ com.ktpci.beacon.service.ScanHelper$1
+ com.ktpci.beacon.service.ScanHelper$ScanData
+ com.ktpci.beacon.service.ScanHelper$ScanProcessor
+com/ktpci/beacon/pciredux/action/ActionType.java
+ com.ktpci.beacon.pciredux.action.ActionType
+com/ktpci/beacon/KtBeaconWM3.java
+ com.ktpci.beacon.KtBeaconWM3
+ com.ktpci.beacon.KtBeaconWM3$1
+com/ktpci/beacon/pciredux/reducer/ReducerAgreeTerms.java
+ com.ktpci.beacon.pciredux.reducer.ReducerAgreeTerms
+com/ktpci/beacon/BeaconIntentProcessor.java
+ com.ktpci.beacon.BeaconIntentProcessor
+com/ktpci/beacon/pciutil/PCIWork.java
+ com.ktpci.beacon.pciutil.PCIWork
+com/ktpci/beacon/pciutil/PCIStorageKey.java
+ com.ktpci.beacon.pciutil.PCIStorageKey
+ com.ktpci.beacon.pciutil.PCIStorageKey$StorageKey
+com/ktpci/beacon/pciredux/state/PCIState1Default.java
+ com.ktpci.beacon.pciredux.state.PCIState1Default
+com/ktpci/bluetooth/BluetoothCrashResolver.java
+ com.ktpci.bluetooth.BluetoothCrashResolver
+ com.ktpci.bluetooth.BluetoothCrashResolver$1
+ com.ktpci.bluetooth.BluetoothCrashResolver$UpdateNotifier
+com/ktpci/beacon/pciutil/PCITime.java
+ com.ktpci.beacon.pciutil.PCITime
+com/ktpci/beacon/pciredux/core/PCIStateChangeNotifier.java
+ com.ktpci.beacon.pciredux.core.PCIStateChangeNotifier
+com/ktpci/beacon/startup/BootstrapNotifier.java
+ com.ktpci.beacon.startup.BootstrapNotifier

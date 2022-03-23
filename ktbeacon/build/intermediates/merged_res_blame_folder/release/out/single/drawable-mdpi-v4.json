@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "D:\\02_workspace\\emarttest\\ktbeacon\\build\\intermediates\\res\\merged\\release\\drawable-mdpi-v4\\notify_panel_notification_icon_bg.png",
+        "source": "C:\\Users\\dalkommjk\\.gradle\\caches\\transforms-2\\files-2.1\\dce699533c4fcdc660e71564e844b3fd\\core-1.3.0-alpha02\\res\\drawable-mdpi-v4\\notify_panel_notification_icon_bg.png"
+    },
+    {
+        "merged": "D:\\02_workspace\\emarttest\\ktbeacon\\build\\intermediates\\res\\merged\\release\\drawable-mdpi-v4\\notification_bg_low_normal.9.png",
+        "source": "C:\\Users\\dalkommjk\\.gradle\\caches\\transforms-2\\files-2.1\\dce699533c4fcdc660e71564e844b3fd\\core-1.3.0-alpha02\\res\\drawable-mdpi-v4\\notification_bg_low_normal.9.png"
+    },
+    {
+        "merged": "D:\\02_workspace\\emarttest\\ktbeacon\\build\\intermediates\\res\\merged\\release\\drawable-mdpi-v4\\notification_bg_normal.9.png",
+        "source": "C:\\Users\\dalkommjk\\.gradle\\caches\\transforms-2\\files-2.1\\dce699533c4fcdc660e71564e844b3fd\\core-1.3.0-alpha02\\res\\drawable-mdpi-v4\\notification_bg_normal.9.png"
+    },
+    {
+        "merged": "D:\\02_workspace\\emarttest\\ktbeacon\\build\\intermediates\\res\\merged\\release\\drawable-mdpi-v4\\notification_bg_low_pressed.9.png",
+        "source": "C:\\Users\\dalkommjk\\.gradle\\caches\\transforms-2\\files-2.1\\dce699533c4fcdc660e71564e844b3fd\\core-1.3.0-alpha02\\res\\drawable-mdpi-v4\\notification_bg_low_pressed.9.png"
+    },
+    {
+        "merged": "D:\\02_workspace\\emarttest\\ktbeacon\\build\\intermediates\\res\\merged\\release\\drawable-mdpi-v4\\notification_bg_normal_pressed.9.png",
+        "source": "C:\\Users\\dalkommjk\\.gradle\\caches\\transforms-2\\files-2.1\\dce699533c4fcdc660e71564e844b3fd\\core-1.3.0-alpha02\\res\\drawable-mdpi-v4\\notification_bg_normal_pressed.9.png"
+    }
+]

@@ -1,0 +1,167 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:1:1-65:12
+INJECTED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:1:1-65:12
+INJECTED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:1:1-65:12
+INJECTED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:1:1-65:12
+INJECTED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:1:1-65:12
+INJECTED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:1:1-65:12
+INJECTED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:1:1-65:12
+	package
+		ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:2:5-31
+		INJECTED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml
+		INJECTED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml
+		ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:1:1-65:12
+		INJECTED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml
+		ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:1:1-65:12
+		INJECTED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:1:11-69
+uses-permission#android.permission.BLUETOOTH
+ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:5:5-92
+	android:required
+		ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:5:66-90
+	android:name
+		ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:5:22-65
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:6:5-98
+	android:required
+		ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:6:72-96
+	android:name
+		ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:6:22-71
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:7:5-80
+	android:name
+		ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:7:22-78
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:8:5-80
+	android:name
+		ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:8:22-78
+uses-permission#android.permission.WAKE_LOCK
+ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:9:5-67
+	android:name
+		ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:9:22-65
+application
+ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:12:5-63:19
+	android:requestLegacyExternalStorage
+		ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:13:9-52
+	android:largeHeap
+		ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:14:9-33
+receiver#com.ktpci.beacon.startup.StartupBroadcastReceiver
+ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:16:9-22:20
+	android:name
+		ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:16:19-83
+intent-filter#action:name:android.intent.action.ACTION_POWER_CONNECTED+action:name:android.intent.action.ACTION_POWER_DISCONNECTED+action:name:android.intent.action.BOOT_COMPLETED
+ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:17:13-21:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:18:17-78
+	android:name
+		ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:18:25-76
+action#android.intent.action.ACTION_POWER_CONNECTED
+ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:19:17-86
+	android:name
+		ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:19:25-84
+action#android.intent.action.ACTION_POWER_DISCONNECTED
+ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:20:17-89
+	android:name
+		ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:20:25-87
+receiver#com.ktpci.beacon.pcireceiver.WakeReceiver
+ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:23:9-62
+	android:name
+		ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:23:19-59
+receiver#com.ktpci.beacon.pcireceiver.UpdateReceiver
+ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:24:9-64
+	android:name
+		ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:24:19-61
+receiver#com.ktpci.beacon.pcireceiver.BootReceiver
+ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:25:9-29:20
+	android:name
+		ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:25:19-59
+intent-filter#action:name:android.intent.action.BOOT_COMPLETED
+ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:26:13-28:29
+receiver#com.ktpci.beacon.pcireceiver.RunningReceiver
+ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:30:9-36:20
+	android:name
+		ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:30:19-62
+intent-filter#action:name:com.ktpci.running.false+action:name:com.ktpci.running.req+action:name:com.ktpci.running.true
+ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:31:13-35:29
+action#com.ktpci.running.req
+ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:32:17-63
+	android:name
+		ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:32:25-61
+action#com.ktpci.running.true
+ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:33:17-64
+	android:name
+		ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:33:25-62
+action#com.ktpci.running.false
+ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:34:17-65
+	android:name
+		ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:34:25-63
+service#com.ktpci.beacon.service.BeaconService
+ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:38:9-43:15
+	android:enabled
+		ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:38:18-40
+	android:label
+		ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:41:13-35
+	android:exported
+		ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:39:13-37
+	android:isolatedProcess
+		ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:40:13-44
+	android:name
+		ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:42:13-50
+service#com.ktpci.beacon.BeaconIntentProcessor
+ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:45:9-48:15
+	android:enabled
+		ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:46:13-35
+	android:exported
+		ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:47:13-37
+	android:name
+		ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:45:18-55
+service#com.ktpci.beacon.service.ScanJob
+ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:50:9-54:19
+	android:permission
+		ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:51:17-73
+	android:name
+		ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:50:18-49
+meta-data#immediateScanJobId
+ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:52:13-86
+	android:value
+		ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:52:58-83
+	android:name
+		ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:52:24-57
+meta-data#periodicScanJobId
+ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:53:13-85
+	android:value
+		ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:53:57-82
+	android:name
+		ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:53:24-56
+service#com.ktpci.bluetooth.BluetoothTestJob
+ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:56:9-59:19
+	android:permission
+		ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:57:13-69
+	android:name
+		ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:56:18-69
+meta-data#jobId
+ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:58:13-73
+	android:value
+		ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:58:45-71
+	android:name
+		ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:58:24-44
+uses-sdk
+INJECTED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml
+INJECTED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml
+INJECTED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml
+INJECTED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml
+		ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml
+		INJECTED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml
+		ADDED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml
+		INJECTED from D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml

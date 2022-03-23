@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Kt_Gigagenie_Pci</string>
+    <string name="encoding_type_utf8">UTF-8</string>
+    <string name="encoding_type_sha256">SHA-256</string>
+    <string name="sample_key">12345678901234567890123456789012</string>
+    <string name="sample_key_16">0123456789012345</string>
+    <string name="sample_key_32">01234567890123456789012345678901</string>
+
+</resources>

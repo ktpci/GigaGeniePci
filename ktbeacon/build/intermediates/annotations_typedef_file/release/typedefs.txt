@@ -1,0 +1,2 @@
+D com/ktpci/beacon/PCI$PCICode
+D com/ktpci/beacon/pciutil/PCIStorageKey$StorageKey

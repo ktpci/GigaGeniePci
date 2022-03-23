@@ -1,0 +1,65 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+//buildscript {
+//
+//    repositories {
+//        google()
+//        jcenter()
+//    }
+//    dependencies {
+//        classpath 'com.android.tools.build:gradle:3.0.1'
+//
+//
+//        // NOTE: Do not place your application dependencies here; they belong
+//        // in the individual module build.gradle files
+//    }
+//}
+//
+//allprojects {
+//    repositories {
+//        google()
+//        jcenter()
+//    }
+//}
+buildscript {
+
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.0.1'
+        classpath 'org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:2.6.1'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+static String currentversionName(String major, String minor, String build) {
+    String versionname = major + "." + minor + "." + build
+//    String tag = "git describe --tags --abbrev=0 --exact-match".execute().text.trim()
+//    String commit = "git rev-parse HEAD".execute().text.trim().substring(0, 7)
+//    if (tag?.trim()) return tag
+//    else return commit
+    return versionname
+}
+static int currentversionCode(int major, int minor, int build) {
+    int versioncode = (major * 10000) + (minor * 100) + build
+//    String tag = "git describe --tags --abbrev=0 --exact-match".execute().text.trim()
+//    String commit = "git rev-parse HEAD".execute().text.trim().substring(0, 7)
+//    if (tag?.trim()) return tag
+//    else return commit
+    return versioncode
+}

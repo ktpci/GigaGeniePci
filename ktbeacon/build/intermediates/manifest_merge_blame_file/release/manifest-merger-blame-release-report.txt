@@ -1,0 +1,144 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.ktpci.beacon"
+4    android:versionCode="10002"
+5    android:versionName="1.0.2" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="14"
+8-->D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml
+10
+11    <uses-permission
+11-->D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:5:5-92
+12        android:name="android.permission.BLUETOOTH"
+12-->D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:5:22-65
+13        android:required="false" />
+13-->D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:5:66-90
+14    <uses-permission
+14-->D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:6:5-98
+15        android:name="android.permission.BLUETOOTH_ADMIN"
+15-->D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:6:22-71
+16        android:required="false" />
+16-->D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:6:72-96
+17    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+17-->D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:7:5-80
+17-->D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:7:22-78
+18    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+18-->D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:8:5-80
+18-->D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:8:22-78
+19    <uses-permission android:name="android.permission.WAKE_LOCK" />
+19-->D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:9:5-67
+19-->D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:9:22-65
+20
+21    <application
+21-->D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:12:5-63:19
+22        android:largeHeap="true"
+22-->D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:14:9-33
+23        android:requestLegacyExternalStorage="true" >
+23-->D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:13:9-52
+24        <receiver android:name="com.ktpci.beacon.startup.StartupBroadcastReceiver" >
+24-->D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:16:9-22:20
+24-->D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:16:19-83
+25            <intent-filter>
+25-->D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:17:13-21:29
+26                <action android:name="android.intent.action.BOOT_COMPLETED" />
+26-->D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:18:17-78
+26-->D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:18:25-76
+27                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+27-->D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:19:17-86
+27-->D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:19:25-84
+28                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+28-->D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:20:17-89
+28-->D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:20:25-87
+29            </intent-filter>
+30        </receiver>
+31        <receiver android:name="com.ktpci.beacon.pcireceiver.WakeReceiver" />
+31-->D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:23:9-62
+31-->D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:23:19-59
+32        <receiver android:name="com.ktpci.beacon.pcireceiver.UpdateReceiver" />
+32-->D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:24:9-64
+32-->D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:24:19-61
+33        <receiver android:name="com.ktpci.beacon.pcireceiver.BootReceiver" >
+33-->D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:25:9-29:20
+33-->D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:25:19-59
+34            <intent-filter>
+34-->D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:26:13-28:29
+35                <action android:name="android.intent.action.BOOT_COMPLETED" />
+35-->D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:18:17-78
+35-->D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:18:25-76
+36            </intent-filter>
+37        </receiver>
+38        <receiver android:name="com.ktpci.beacon.pcireceiver.RunningReceiver" >
+38-->D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:30:9-36:20
+38-->D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:30:19-62
+39            <intent-filter>
+39-->D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:31:13-35:29
+40                <action android:name="com.ktpci.running.req" />
+40-->D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:32:17-63
+40-->D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:32:25-61
+41                <action android:name="com.ktpci.running.true" />
+41-->D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:33:17-64
+41-->D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:33:25-62
+42                <action android:name="com.ktpci.running.false" />
+42-->D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:34:17-65
+42-->D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:34:25-63
+43            </intent-filter>
+44        </receiver>
+45
+46        <service
+46-->D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:38:9-43:15
+47            android:name="com.ktpci.beacon.service.BeaconService"
+47-->D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:42:13-50
+48            android:enabled="true"
+48-->D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:38:18-40
+49            android:exported="false"
+49-->D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:39:13-37
+50            android:isolatedProcess="false"
+50-->D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:40:13-44
+51            android:label="beacon" />
+51-->D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:41:13-35
+52        <service
+52-->D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:45:9-48:15
+53            android:name="com.ktpci.beacon.BeaconIntentProcessor"
+53-->D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:45:18-55
+54            android:enabled="true"
+54-->D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:46:13-35
+55            android:exported="false" />
+55-->D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:47:13-37
+56        <service
+56-->D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:50:9-54:19
+57            android:name="com.ktpci.beacon.service.ScanJob"
+57-->D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:50:18-49
+58            android:permission="android.permission.BIND_JOB_SERVICE" >
+58-->D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:51:17-73
+59            <meta-data
+59-->D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:52:13-86
+60                android:name="immediateScanJobId"
+60-->D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:52:24-57
+61                android:value="208352939" />
+61-->D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:52:58-83
+62            <meta-data
+62-->D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:53:13-85
+63                android:name="periodicScanJobId"
+63-->D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:53:24-56
+64                android:value="208352940" />
+64-->D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:53:57-82
+65        </service>
+66        <service
+66-->D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:56:9-59:19
+67            android:name="com.ktpci.bluetooth.BluetoothTestJob"
+67-->D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:56:18-69
+68            android:permission="android.permission.BIND_JOB_SERVICE" >
+68-->D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:57:13-69
+69            <meta-data
+69-->D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:58:13-73
+70                android:name="jobId"
+70-->D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:58:24-44
+71                android:value="1799803768" />
+71-->D:\02_workspace\emarttest\ktbeacon\src\main\AndroidManifest.xml:58:45-71
+72        </service>
+73    </application>
+74
+75</manifest>

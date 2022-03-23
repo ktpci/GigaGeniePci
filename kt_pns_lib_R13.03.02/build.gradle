@@ -1,0 +1,2 @@
+configurations.maybeCreate("default")
+artifacts.add("default", file('kt_pns_lib_R13.03.02.aar'))

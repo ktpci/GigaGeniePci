@@ -1,0 +1,65 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ktpci.beacon"
+    >
+
+    <uses-permission android:name="android.permission.BLUETOOTH" android:required="false"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" android:required="false"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+
+    <application
+        android:requestLegacyExternalStorage="true"
+        android:largeHeap="true">
+
+        <receiver android:name="com.ktpci.beacon.startup.StartupBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".pcireceiver.WakeReceiver" />
+        <receiver android:name=".pcireceiver.UpdateReceiver" />
+        <receiver android:name=".pcireceiver.BootReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".pcireceiver.RunningReceiver" >
+            <intent-filter>
+                <action android:name="com.ktpci.running.req"/>
+                <action android:name="com.ktpci.running.true"/>
+                <action android:name="com.ktpci.running.false"/>
+            </intent-filter>
+        </receiver>
+
+        <service android:enabled="true"
+            android:exported="false"
+            android:isolatedProcess="false"
+            android:label="beacon"
+            android:name=".service.BeaconService"
+            />
+
+        <service android:name=".BeaconIntentProcessor"
+            android:enabled="true"
+            android:exported="false"
+            />
+
+        <service android:name=".service.ScanJob"
+                android:permission="android.permission.BIND_JOB_SERVICE">
+            <meta-data android:name="immediateScanJobId" android:value="208352939" />
+            <meta-data android:name="periodicScanJobId" android:value="208352940" />
+        </service>
+  
+        <service android:name="com.ktpci.bluetooth.BluetoothTestJob"
+            android:permission="android.permission.BIND_JOB_SERVICE" >
+            <meta-data android:name="jobId" android:value="1799803768"/>
+        </service>
+
+
+
+    </application>
+
+</manifest>

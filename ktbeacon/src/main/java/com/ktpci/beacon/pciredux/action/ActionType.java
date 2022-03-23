@@ -1,0 +1,44 @@
+package com.ktpci.beacon.pciredux.action;
+
+
+public enum ActionType {
+    // SDK State Controls
+    PCI_AGREE_TERMS,
+    PCI_DISAGREE_TERMS,
+    PCI_FETCH_POLICY,
+    PCI_OPT_IN,
+    PCI_OPT_OUT,
+    PCI_CHECKIN,
+    PCI_CHECKIN_QUIETLY,
+    PCI_CHECKOUT,
+    PCI_CHECKOUT_QUIETLY,
+    PCI_EXPIRE_BITSOUND,
+    PCI_SET_FCM_TOKEN,
+    PCI_SET_USER_INFO,
+    PCI_AGREE_ADID_USE,
+    PCI_DISAGREE_ADID_USE,
+    PCI_AGREE_AD_PUSH,
+    PCI_DISAGREE_AD_PUSH,
+    PCI_AGREE_MIC_USE,
+    PCI_DISAGREE_MIC_USE,
+    PCI_AGREE_BLE_USE,   //BLE 추가 by dalkommjk | 2020-03-16
+    PCI_DISAGREE_BLE_USE, //BLE 추가 by dalkommjk | 2020-03-16
+    PCI_SET_MAC,
+    PCI_SET_OTM_SUID,
+    PCI_SET_PACKAGE_KEY,
+    PCI_SCAN_SOUND,
+    PCI_DOWNGRADE_STATE,
+
+
+    // Application Information Reports
+    PCI_UPLOAD_ALL_PACKAGES,
+    PCI_UPLOAD_PCI_PACKAGES,
+
+    // Push Handler
+    PCI_PUSH_RECEIVED,
+    PCI_UPLOAD_PUSH_RESULT,
+    PCI_UPLOAD_PUSH_TRIGGERED_APP_INSTALL,
+
+    // Bitsound Control
+    PCI_SET_AVOID_APP_PERMISSION_MONITOR,
+}

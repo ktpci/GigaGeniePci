@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kt.gigagenie.pci.MainActivity"
+    android:alpha="0.5"
+    >
+
+    <RelativeLayout
+        android:id="@+id/Layout_TitleText"
+        android:background="#000000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <com.gnifrix.ui.layout.GTextView
+            android:id="@+id/textView_log"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textView_Alpha_label"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border"
+            android:focusable="false"
+            android:fontFamily="monospace"
+            android:padding="5dp"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbars="vertical"
+            android:text="PCI-Debug Mode : ON\nStart GigaGenie-PCI Debug Mode.....\nReady"
+            android:textAlignment="center"
+            android:textColor="#AAAAAA"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/textView_Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:shadowColor="#000000"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="5"
+            android:text="GigaGenie-PCI\nDebug Screen"
+            android:textAlignment="center"
+            android:textColor="#999999"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_Alpha_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Alpha : "
+            android:textAlignment="center"
+            android:layout_below="@+id/textView_Title"
+            android:textSize="13dp"
+            android:textColor="#FFFFFF"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="5"
+            android:shadowColor="#000000"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/textView_Alpha_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="30%"
+            android:textAlignment="center"
+            android:layout_below="@+id/textView_Title"
+            android:layout_toRightOf="@+id/textView_Alpha_label"
+            android:textSize="13dp"
+            android:textColor="#FFFFFF"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="5"
+            android:shadowColor="#000000"
+            android:visibility="gone"
+            />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            >
+
+            <TextView
+                android:id="@+id/textView_version_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ver."
+                android:textAlignment="center"
+                android:textSize="11dp"
+                android:textColor="#BBBBBB"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="5"
+                android:shadowColor="#000000"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_buttons"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="0.7"
+        android:scaleY="0.7"
+        >
+
+        <Spinner
+            android:id="@+id/spnr_appenv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/debug_appEnv_list"
+            android:layout_marginRight="12dp"
+            android:popupBackground="#CCCCCC"
+            android:spinnerMode="dropdown"
+            />
+
+        <Button
+            android:id="@+id/btn_StartService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="시작"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/btn_StopService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="종료"
+            android:textSize="13sp" />
+
+
+
+
+        <Spinner
+            android:id="@+id/spnr_apiList"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/debug_api_list"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="-10dp"
+            android:popupBackground="#CCCCCC"
+            android:spinnerMode="dropdown"
+            />
+        <Button
+            android:id="@+id/btn_ApiTest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Test"
+            android:textSize="13sp" />
+
+        <Spinner
+            android:id="@+id/spnr_broadcastList"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/debug_broadcast_list"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="-10dp"
+            android:popupBackground="#CCCCCC"
+            android:spinnerMode="dropdown"
+            android:textSize="9sp"
+            />
+        <Button
+            android:id="@+id/btn_broadcastTest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Test"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/btn_readPciDB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="ReadDB"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/btn_clearPciDB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="ClrDB"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/btn_restart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="RESTART"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/btn_ClearLog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="ClrLog"
+            android:textSize="13sp" />
+
+        <CheckBox
+            android:id="@+id/chkBox_AutoScroll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:checked="true"
+            android:text="AutoScroll"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/Layout_CommentMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/txtView_commentMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="-"
+            android:textColor="#AAAAAA"
+            android:textSize="11dp"
+            android:shadowColor="#000000"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="5"
+            android:background="@drawable/border"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
